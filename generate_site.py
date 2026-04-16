@@ -1293,14 +1293,28 @@ def build_timeline() -> None:
     body = """
     <section class="section-block">
       <h2>Timeline of transmission</h2>
+      <p>This timeline follows not only poets and dates, but also routes of circulation: courts, khanqahs, bazaars, print presses, classrooms, radio studios, cassette cultures, and digital feeds. Urdu and Persian poetry survive because each era remakes inherited forms for new publics.</p>
       <div class="timeline">
-        <div><strong>9th-11th centuries</strong><p>Persian literary foundations gather around courtly polish, epic memory, and early philosophical reflection.</p></div>
-        <div><strong>12th-14th centuries</strong><p>Mystical intensity expands through Sanai, Attar, Rumi, Saadi, and Hafez, while narrative romance achieves classic form.</p></div>
-        <div><strong>13th-17th centuries</strong><p>Indo-Persian circulation deepens, preparing the aesthetics that will nourish Rekhta and later Urdu ghazal traditions.</p></div>
-        <div><strong>18th century</strong><p>Urdu classical lyric flourishes in Delhi and Lucknow through Mir, Sauda, Dard, and the shaping of urban poetic language.</p></div>
-        <div><strong>19th century</strong><p>Ghalib, Zauq, Momin, Dagh, Hali, and Akbar Allahabadi negotiate loss, modernity, reform, and changing empire.</p></div>
-        <div><strong>20th century</strong><p>Iqbal, Faiz, Firaq, Rashid, Miraji, Forugh, Shamlu, and others reimagine lyric form for modern philosophical and political life.</p></div>
-        <div><strong>21st century</strong><p>Digital circulation, performance culture, and diaspora communities carry Urdu and Persian poetics into a new global readership.</p></div>
+        <div><strong>9th-10th centuries: Early Persian consolidation</strong><p>With Rudaki and his milieu, Persian literary diction acquires confidence at court while retaining oral musicality. Poetry begins to serve memory, etiquette, and political prestige at once.</p></div>
+        <div><strong>10th-11th centuries: Epic and civilizational memory</strong><p>Ferdowsi's monumental project demonstrates that poetry can archive collective history. The epic mode stabilizes narrative scale, moral imagination, and linguistic selfhood.</p></div>
+        <div><strong>11th-12th centuries: Ethical and philosophical lyric</strong><p>Figures like Khayyam and Sanai turn verse into a site of skepticism, mortality, and moral argument. Poetry now speaks to inner life as intensely as to royal patronage.</p></div>
+        <div><strong>12th-13th centuries: Sufi allegory and narrative expansion</strong><p>Attar and Nizami shape two powerful strands: mystical journey and refined romance. Allegory, symbolic landscape, and narrative architecture become durable transregional resources.</p></div>
+        <div><strong>13th-14th centuries: Persian cosmopolis and Indo-Persian synthesis</strong><p>Through Rumi, Saadi, Amir Khusrau, and others, Persian becomes a shared high-cultural medium from Anatolia to Delhi. Multilingual encounter enriches imagery, rhythm, and performance traditions.</p></div>
+        <div><strong>14th-16th centuries: Ghazal classicism and manuscript culture</strong><p>Hafez, Jami, and later inheritors deepen the short lyric into a highly allusive art form. Scribal transmission, commentary, and recitation establish canonical habits of reading.</p></div>
+        <div><strong>16th-17th centuries: Safavid-Mughal circuits and Sabk-e Hindi</strong><p>Mobility between Iran and the subcontinent accelerates stylistic experimentation. Bedil, Saeb, and Kalim exemplify conceptual density, surprising metaphor, and intellectual compression.</p></div>
+        <div><strong>18th century: Rekhta maturity and urban Urdu classicism</strong><p>In Delhi and Lucknow, Mir, Sauda, Dard, and Insha consolidate Urdu lyric authority. The ghazal absorbs city life, fragility, wit, and a new affective realism.</p></div>
+        <div><strong>19th century: Colonial rupture, reform, and new publics</strong><p>Ghalib, Zauq, Momin, Dagh, Hali, Akbar, and others respond to imperial change, print culture, and educational reform. Poetry negotiates grief, adaptation, critique, and modern subjectivity.</p></div>
+        <div><strong>Early 20th century: National imagination and intellectual renewal</strong><p>Iqbal, Hasrat Mohani, Aref Qazvini, and peers mobilize poetry for ethical selfhood, political aspiration, and civilizational debate across rapidly changing societies.</p></div>
+        <div><strong>Mid 20th century: Modernism and progressive commitments</strong><p>Faiz, Firaq, Rashid, Miraji, Forugh, and Shamlu redesign poetic voice under pressures of ideology, gender, war, and mass politics. Free verse and revised ghazal idioms coexist.</p></div>
+        <div><strong>Late 20th-21st century: Broadcast, stage, and digital afterlives</strong><p>Mushaira circuits, recordings, television, social media, and diaspora communities carry sher o shayari into global conversational space. Poetic memory remains classical in reference and contemporary in delivery.</p></div>
+      </div>
+    </section>
+    <section class="section-block">
+      <h2>How eras overlap</h2>
+      <div class="feature-grid">
+        <article><h3>No hard breaks</h3><p>Classical, reformist, progressive, and contemporary modes are not sealed boxes. Later poets frequently quote, parody, or invert earlier voices, producing a layered temporal dialogue.</p></article>
+        <article><h3>Transmission media</h3><p>Manuscript, lithograph, journal, radio, stage performance, and social platforms each reshape which poets are remembered and how lines are interpreted.</p></article>
+        <article><h3>Living canon</h3><p>The canon persists because readers continuously curate it: teachers, reciters, translators, editors, and online communities keep classical lines in active cultural circulation.</p></article>
       </div>
     </section>
     """
@@ -1311,19 +1325,36 @@ def build_traditions() -> None:
     body = """
     <section class="section-block">
       <h2>Two great traditions in conversation</h2>
+      <p>Urdu and Persian are best understood as interacting literary ecologies. They share meters, metaphors, and devotional-intellectual vocabularies, while preserving distinct sonic textures, social histories, and readership habits.</p>
       <div class="feature-grid">
         <article>
           <h3>Persian worlds</h3>
-          <p>From Central Asia and Iran to Anatolia and the Indian subcontinent, Persian poetry shaped elite, mystical, and popular imaginaries alike.</p>
+          <p>From Central Asia and Iran to Anatolia and the Indian subcontinent, Persian functioned as a language of scholarship, governance, mysticism, and refined lyric expression.</p>
         </article>
         <article>
           <h3>Urdu worlds</h3>
-          <p>Urdu inherits Persian imagery and meters while absorbing local speech, urban affect, and the changing publics of South Asia.</p>
+          <p>Urdu inherits Persian poetics while integrating Hindavi speech, urban intimacy, marketplace idiom, and the emotional cadences of South Asian everyday life.</p>
         </article>
         <article>
           <h3>Indo-Persian bridge</h3>
-          <p>Amir Khusrau, Bedil, Iqbal, and many others make visible the cultural bridge between Persian and Urdu literary sensibilities.</p>
+          <p>Amir Khusrau, Bedil, Iqbal, and many others make visible a bridge where linguistic boundaries are porous and aesthetic exchange is the norm.</p>
         </article>
+      </div>
+    </section>
+    <section class="section-block">
+      <h2>Shared poetic technologies</h2>
+      <div class="feature-grid">
+        <article><h3>Form</h3><p>Ghazal, qasida, masnavi, rubai, marsiya, nazm, and free-verse adaptations move across both traditions with local reinvention in each historical context.</p></article>
+        <article><h3>Imagery</h3><p>Beloved, tavern, garden, candle, moth, night, caravan, ruin, and mirror form a reusable symbolic lexicon that supports both romance and metaphysical inquiry.</p></article>
+        <article><h3>Intertextuality</h3><p>Poets write with and against predecessors through tazmin, allusion, rhetorical echo, and strategic revision. Canon is a conversation, not a museum shelf.</p></article>
+      </div>
+    </section>
+    <section class="section-block">
+      <h2>Distinctive emphases</h2>
+      <div class="feature-grid">
+        <article><h3>Persian emphasis</h3><p>Large allegorical architecture, philosophical abstraction, and transregional manuscript authority often dominate Persian high-classical trajectories.</p></article>
+        <article><h3>Urdu emphasis</h3><p>Compact urban affect, speech-near dramatic turns, and performance-rich reception shape much of Urdu's public life across mushaira and print cultures.</p></article>
+        <article><h3>Modern convergence</h3><p>In the 20th century, both traditions confront colonial modernity, nationalism, socialist thought, feminism, and mass media, creating new ethical and stylistic alignments.</p></article>
       </div>
     </section>
     """
@@ -1334,6 +1365,7 @@ def build_themes() -> None:
     body = """
     <section class="section-block">
       <h2>Major themes</h2>
+      <p>Themes here are not isolated topics but dynamic fields where theology, politics, psychology, and aesthetics meet. A single couplet can hold contradictory valences: intimate and cosmic, playful and severe, secular and devotional.</p>
       <div class="feature-grid">
         <article><h3>Love and longing</h3><p>The beloved may be human, divine, absent, cruel, or symbolic. Desire remains the central current of lyric experience.</p></article>
         <article><h3>Wine and tavern</h3><p>Often literal, often allegorical, these images express release, heterodoxy, ecstasy, and a challenge to moral rigidity.</p></article>
@@ -1341,6 +1373,20 @@ def build_themes() -> None:
         <article><h3>Ethics and wisdom</h3><p>Saadi, Hali, Parvin Etesami, and others turn poetry into moral reflection without sacrificing aesthetic pleasure.</p></article>
         <article><h3>Revolt and justice</h3><p>Faiz, Josh, Shamlu, Kishwar Naheed, and many modern poets carry lyric speech into public dissent.</p></article>
         <article><h3>Nature and stillness</h3><p>From spring gardens to rain-soaked streets, natural imagery offers both external beauty and inner weather.</p></article>
+        <article><h3>Self and annihilation</h3><p>Mystical and philosophical strands explore ego, surrender, and the paradox of becoming through self-erasure.</p></article>
+        <article><h3>Time and impermanence</h3><p>Khayyam to Ghalib to modernists repeatedly stage the brevity of life against longing for permanence and meaning.</p></article>
+        <article><h3>Language and silence</h3><p>Many poems dramatize the limits of speech: what can be said, what must be hinted, and what remains beyond utterance.</p></article>
+        <article><h3>Exile and migration</h3><p>Displacement, partition, travel, and diaspora produce recurring vocabularies of home, estrangement, and reassembled belonging.</p></article>
+        <article><h3>Gender and voice</h3><p>From coded classical feminine address to explicit modern feminist assertion, poets reshape who speaks and how authority is heard.</p></article>
+        <article><h3>City and crowd</h3><p>Delhi, Lucknow, Lahore, Tehran, and Karachi appear as emotional geographies where private feeling and public history collide.</p></article>
+      </div>
+    </section>
+    <section class="section-block">
+      <h2>How to read themes closely</h2>
+      <div class="feature-grid">
+        <article><h3>Watch metaphor shifts</h3><p>Track how one image changes function between poets: wine in Hafez, Faiz, and contemporary verse carries very different social and spiritual pressures.</p></article>
+        <article><h3>Check historical context</h3><p>A line about ruin in 18th-century Delhi, post-Partition Lahore, or modern Tehran cannot be read with the same historical assumptions.</p></article>
+        <article><h3>Read across genres</h3><p>Ghazal, nazm, qasida, and free verse distribute emotional intensity differently; thematic comparison gains precision when form is considered.</p></article>
       </div>
     </section>
     """
@@ -1351,10 +1397,30 @@ def build_reading_room() -> None:
     body = """
     <section class="section-block">
       <h2>How to read this atlas</h2>
+      <p>The Reading Room is designed for layered entry: beginner-friendly orientation, serious comparative pathways, and research-ready prompts for deeper study. Use it as both guide and method.</p>
       <div class="feature-grid">
         <article><h3>Interpretation, not literal translation</h3><p>The Hindi and English sections offer literary readings of each poet’s style, atmosphere, and contribution rather than strict line-by-line translations.</p></article>
         <article><h3>Read comparatively</h3><p>Move between Mir and Hafez, Ghalib and Bedil, Faiz and Shamlu, Forugh and Parveen Shakir to notice continuities and departures.</p></article>
         <article><h3>Use the poet index</h3><p>The index lets you browse by era and tradition, making the site useful for both teaching and leisurely exploration.</p></article>
+        <article><h3>Read aloud</h3><p>Sound is interpretive evidence. Cadence, pause, and internal rhyme reveal emotional architecture that silent reading may hide.</p></article>
+        <article><h3>Hold ambiguity</h3><p>Do not force a single meaning too quickly. Classical lyric often invites simultaneous ethical, erotic, mystical, and political readings.</p></article>
+        <article><h3>Build micro-anthologies</h3><p>Create your own 5-10 poem clusters by theme, era, or image to develop comparative intuition before large-scale historical claims.</p></article>
+      </div>
+    </section>
+    <section class="section-block">
+      <h2>Suggested reading pathways</h2>
+      <div class="feature-grid">
+        <article><h3>Path A: Classical foundations</h3><p>Rudaki -> Ferdowsi -> Saadi -> Hafez -> Mir. Focus on canon formation, dictional elegance, and shifts from epic to intimate lyric.</p></article>
+        <article><h3>Path B: Mystical interiority</h3><p>Sanai -> Attar -> Rumi -> Bedil. Track symbols of journey, annihilation, paradox, and metaphysical compression.</p></article>
+        <article><h3>Path C: Modernity and dissent</h3><p>Hali -> Iqbal -> Faiz -> Forugh -> Shamlu -> Kishwar Naheed. Follow debates on reform, nation, gender, and public speech.</p></article>
+      </div>
+    </section>
+    <section class="section-block">
+      <h2>Classroom and discussion prompts</h2>
+      <div class="feature-grid">
+        <article><h3>Prompt 1</h3><p>Choose one metaphor (mirror, night, tavern, dust, journey) and compare its function across three centuries.</p></article>
+        <article><h3>Prompt 2</h3><p>Where does lyric become political without naming politics directly? Use one classical and one modern example.</p></article>
+        <article><h3>Prompt 3</h3><p>How do translation choices alter emotional temperature? Compare one sample's original transliteration with Hindi and English renderings.</p></article>
       </div>
     </section>
     """
@@ -1365,11 +1431,22 @@ def build_gallery() -> None:
     body = """
     <section class="section-block">
       <h2>Images of the poetic world</h2>
-      <p>This site is designed as a digital mehfil: deep indigo, antique gold, soft parchment, and layered panels evoke manuscript culture, mushaira ambience, and the contemplative intimacy of reading.</p>
+      <p>This gallery explains the visual grammar of the atlas. The interface is conceived as a digital mehfil where manuscript memory, stage performance, and contemporary screen-reading meet without visual clutter.</p>
       <div class="feature-grid">
-        <article><h3>Visual language</h3><p>Decorative borders, restrained shadows, and generous margins create a museum-like reading environment.</p></article>
-        <article><h3>Portrait placement</h3><p>The creator portrait anchors every page with a consistent signature presence at the top of the site.</p></article>
-        <article><h3>Responsive reading</h3><p>The interface remains elegant on both large displays and smaller screens, encouraging extended browsing.</p></article>
+        <article><h3>Color architecture</h3><p>Deep indigo evokes night reading, antique gold signals manuscript illumination, and parchment accents soften high-contrast screens for long-duration literary browsing.</p></article>
+        <article><h3>Panel layering</h3><p>Semi-transparent panels create depth without distraction, preserving focus on text while suggesting archival layers and time-stratified memory.</p></article>
+        <article><h3>Typographic pairing</h3><p>Serif display headings provide historical gravitas, while sans-serif body text supports legibility for dense commentary and bilingual interpretation.</p></article>
+        <article><h3>Portrait placement</h3><p>The creator portrait anchors every page with stable identity and authorship, functioning as both signature and curatorial seal.</p></article>
+        <article><h3>Callout rhythm</h3><p>Cards, notes, and section blocks structure cognitive pacing: contextual frame first, then deep content, then navigational return points.</p></article>
+        <article><h3>Mobile behavior</h3><p>Responsive spacing, reduced visual noise, and preserved hierarchy ensure that aesthetic richness survives on smaller devices.</p></article>
+      </div>
+    </section>
+    <section class="section-block">
+      <h2>Design principles behind the experience</h2>
+      <div class="feature-grid">
+        <article><h3>Atmosphere with discipline</h3><p>The mood is evocative, but every decorative decision must preserve reading clarity and navigational confidence.</p></article>
+        <article><h3>Continuity across pages</h3><p>Shared header, navigation, and component language keep 70+ pages coherent, so users experience one atlas rather than fragmented microsites.</p></article>
+        <article><h3>Scholarly accessibility</h3><p>Aesthetic decisions support serious study: citation visibility, section modularity, and predictable structure aid classroom and research use.</p></article>
       </div>
     </section>
     """
