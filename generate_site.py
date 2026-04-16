@@ -87,6 +87,454 @@ POETS = [
 ]
 
 
+PUBLIC_DOMAIN_SAMPLE_POETS = {
+    "amir-khusrau",
+    "rumi",
+    "hafez",
+    "mir-taqi-mir",
+    "ghalib",
+    "bahadur-shah-zafar",
+    "muhammad-iqbal",
+}
+
+PUBLIC_DOMAIN_SAMPLES = {
+    "amir-khusrau": [
+        {
+            "title": "Zehaal-e miskin",
+            "original": "Zehaal-e miskin makun taghaful, duraye naina banaye batiyan.",
+            "english": "Do not ignore the helpless lover, turning your eyes away while speaking sweetly.",
+            "hindi": "बेबस आशिक़ की दशा से यूँ बेपरवाह मत हो, आँखें फेरकर मीठी बातें मत करो।",
+        },
+        {
+            "title": "Chaap tilak",
+            "original": "Chaap tilak sab chhini re mose naina milaike.",
+            "english": "One glance from you stole my identity, my adornment, my very self.",
+            "hindi": "तुम्हारी एक नज़र ने मेरी पहचान, मेरा श्रृंगार, मेरा सारा अस्तित्व छीन लिया।",
+        },
+        {
+            "title": "Aaj rang hai",
+            "original": "Aaj rang hai ri ma, rang hai ri.",
+            "english": "Today the whole being is dyed in color, intoxicated with spiritual joy.",
+            "hindi": "आज पूरा अस्तित्व रंग में डूब गया है, मानो रूहानी उल्लास से भर उठा हो।",
+        },
+        {
+            "title": "Kaahe ko byahi bides",
+            "original": "Kaahe ko byahi bides re, lakh babul more.",
+            "english": "Why was I married away to a distant land, O my father?",
+            "hindi": "बाबुल, मुझे पराए देश क्यों ब्याह दिया गया?",
+        },
+        {
+            "title": "Nizam piya",
+            "original": "Nizam piya rang rangili, chunariya de mohe.",
+            "english": "Beloved master Nizam, grant me the many-colored veil of grace.",
+            "hindi": "मेरे प्रिय निज़ाम, मुझे अपनी कृपा की रंग-बिरंगी चादर दे दीजिए।",
+        },
+        {
+            "title": "Man kunto Maula",
+            "original": "Man kunto Maula, fa haza Ali-un Maula.",
+            "english": "Whoever takes me as master, let Ali be known as master too.",
+            "hindi": "जिसका मैं मौला हूँ, उसके लिए अली भी मौला हैं।",
+        },
+        {
+            "title": "Khusrau darya prem ka",
+            "original": "Khusrau darya prem ka, ulti wa ki dhaar.",
+            "english": "Love is a river flowing against the current; whoever enters it is swept beyond the self.",
+            "hindi": "प्रेम ऐसी नदी है जिसकी धारा उलटी बहती है; जो इसमें उतरता है, वह अपने आप से आगे निकल जाता है।",
+        },
+        {
+            "title": "Gori sove sej par",
+            "original": "Gori sove sej par, mukh par daare kes.",
+            "english": "The fair one rests upon the bed, her face covered by loosened hair.",
+            "hindi": "सजनी शय्या पर सोई है, चेहरे पर बिखरे केश पड़े हैं।",
+        },
+        {
+            "title": "Mohe apne hi rang",
+            "original": "Mohe apne hi rang mein rang de, Nizam.",
+            "english": "Dye me completely in your own color, O Nizam.",
+            "hindi": "ऐ निज़ाम, मुझे अपने ही रंग में पूरी तरह रंग दो।",
+        },
+        {
+            "title": "Saqiya",
+            "original": "Saqiya, baz aa ke der in bazm jahan digar ast.",
+            "english": "Cupbearer, return, for this gathering of the world has changed again.",
+            "hindi": "साक़ी, लौट आओ, क्योंकि दुनिया की यह महफ़िल फिर बदल गई है।",
+        },
+    ],
+    "rumi": [
+        {
+            "title": "Listen to the reed",
+            "original": "Bishnav az ney chun hikayat mikonad.",
+            "english": "Listen to the reed flute as it tells the story of separation.",
+            "hindi": "बांसुरी की आवाज़ सुनो, वह जुदाई की कहानी सुना रही है।",
+        },
+        {
+            "title": "Return to origin",
+            "original": "Har kasi ku dur mand az asl-e khish, baz juyad ruzgar-e wasl-e khish.",
+            "english": "Whoever is parted from the origin longs for the time of reunion.",
+            "hindi": "जो अपनी मूल जड़ से दूर हो जाता है, वह मिलन के समय को खोजता रहता है।",
+        },
+        {
+            "title": "Love turns bitterness sweet",
+            "original": "Az mohabbat talkha shirin mishavad.",
+            "english": "Through love, what is bitter becomes sweet.",
+            "hindi": "प्रेम से कड़वाहट भी मिठास में बदल जाती है।",
+        },
+        {
+            "title": "Come, come again",
+            "original": "Biya biya har anche hasti biya.",
+            "english": "Come, come, whoever you are, come again.",
+            "hindi": "आओ, आओ, तुम जैसे भी हो, फिर भी चले आओ।",
+        },
+        {
+            "title": "Out beyond wrong and right",
+            "original": "Az kufr o din berun tar ast ma ra meydani.",
+            "english": "There is a field beyond rigid divisions of belief where the soul meets freedom.",
+            "hindi": "आस्था और निषेध की कठोर सीमाओं से परे एक खुला मैदान है जहाँ आत्मा स्वतंत्र होती है।",
+        },
+        {
+            "title": "The lamps are many",
+            "original": "In chiragh ast inki nur az u yeki ast.",
+            "english": "The lamps are many, but the light is one.",
+            "hindi": "दीपक अनेक हैं, पर उनकी रोशनी एक ही है।",
+        },
+        {
+            "title": "Silent speech",
+            "original": "Khamush kon ke zaban-e del digar ast.",
+            "english": "Be silent, for the language of the heart is another language.",
+            "hindi": "चुप हो जाओ, क्योंकि दिल की भाषा कुछ और ही होती है।",
+        },
+        {
+            "title": "Die before death",
+            "original": "Bimirid bimirid dar in ishq bimirid.",
+            "english": "Die into love before death comes, so you may awaken truly alive.",
+            "hindi": "मृत्यु आने से पहले प्रेम में अपने अहं को मिटा दो, तभी सच्चा जीवन जागेगा।",
+        },
+        {
+            "title": "The wound and the light",
+            "original": "Az zakhm haman nur dar ayad.",
+            "english": "It is through the wound that light finds its way in.",
+            "hindi": "घाव ही वह जगह है जहाँ से रोशनी भीतर आती है।",
+        },
+        {
+            "title": "Be melting snow",
+            "original": "Barf bash o az khodet boro, cho ab-e ravan.",
+            "english": "Be like melting snow, leaving behind the rigid self and flowing onward.",
+            "hindi": "पिघलती बर्फ़ जैसे बनो, कठोर अहं को छोड़कर बहते चले जाओ।",
+        },
+    ],
+    "hafez": [
+        {
+            "title": "The Shirazi Turk",
+            "original": "Agar an Turk-e Shirazi be dast arad del-e ma ra.",
+            "english": "If that Shirazi beauty would take my heart in hand, all worldly treasures would feel little beside it.",
+            "hindi": "यदि वह शीराज़ी रूपसी मेरे दिल को थाम ले, तो दुनिया के सारे ख़ज़ाने भी तुच्छ लगेंगे।",
+        },
+        {
+            "title": "Let us scatter roses",
+            "original": "Biya ta gol bar afshanem o may dar saghar andazim.",
+            "english": "Come, let us scatter flowers and pour wine into the cup.",
+            "hindi": "आओ, फूल बिखेरें और प्यालों में मदिरा उंडेलें।",
+        },
+        {
+            "title": "Joseph returns",
+            "original": "Yusuf-e gomgashta baz ayad be Kanan, gham makhor.",
+            "english": "The lost Joseph will return to Canaan; do not surrender to grief.",
+            "hindi": "खोया हुआ यूसुफ़ फिर कनआन लौटेगा, इसलिए ग़म में मत डूबो।",
+        },
+        {
+            "title": "Good news",
+            "original": "Mojdeh ey del ke Masiha nafas-i mi ayad.",
+            "english": "Rejoice, heart, for a life-giving breath is on its way.",
+            "hindi": "दिल, खुश हो जा, क्योंकि जीवन देने वाली साँस आने वाली है।",
+        },
+        {
+            "title": "Last night the angels",
+            "original": "Dush didam ke malaik dar-e meykhane zadand.",
+            "english": "Last night I saw angels knock at the tavern door.",
+            "hindi": "कल रात मैंने फ़रिश्तों को मयख़ाने के दरवाज़े पर दस्तक देते देखा।",
+        },
+        {
+            "title": "Cupbearer bring wine",
+            "original": "Ala ya ayyoha-s saqi adir ka'san wa nawilha.",
+            "english": "Cupbearer, pass the cup around and offer it forth.",
+            "hindi": "ऐ साक़ी, प्याला घुमाओ और सबको पिलाओ।",
+        },
+        {
+            "title": "Morning breeze",
+            "original": "Saba be lutf begu an ghazal sara ra.",
+            "english": "O morning breeze, gently carry my message to the beloved singer.",
+            "hindi": "ऐ सबा, मेरी बात उस प्रिय ग़ज़ल-सराय तक कोमलता से पहुँचा दो।",
+        },
+        {
+            "title": "The beloved's lane",
+            "original": "Dar kuye nek-nami ma ra guzar nadadand.",
+            "english": "They would not let me pass into the lane of good reputation, for love had chosen another path.",
+            "hindi": "उन्होंने मुझे नेक-नामी की गली से गुज़रने न दिया, क्योंकि इश्क़ ने मेरे लिए दूसरी राह चुनी थी।",
+        },
+        {
+            "title": "Tavern door",
+            "original": "Dar-e meykhane bastaand, khoda ya mabada.",
+            "english": "They have shut the tavern door, O God, let that never be the final word.",
+            "hindi": "उन्होंने मयख़ाने का दर बंद कर दिया; हे ईश्वर, ऐसा न हो कि यही अंतिम सत्य रह जाए।",
+        },
+        {
+            "title": "Ask Hafez",
+            "original": "Hafeza may khor o rindi kon o khosh bash vali.",
+            "english": "Hafez, drink the wine of freedom, live playfully, yet do not wound another heart.",
+            "hindi": "हाफ़िज़, रिंदाना खुलापन अपनाओ, आनंद से जियो, पर किसी दिल को चोट मत पहुँचाओ।",
+        },
+    ],
+    "mir-taqi-mir": [
+        {
+            "title": "The leaf and branch",
+            "original": "Patta patta boota boota hal hamara jane hai.",
+            "english": "Every leaf and every shrub knows the state of my heart.",
+            "hindi": "पत्ता-पत्ता, बूटा-बूटा मेरे दिल का हाल जानता है।",
+        },
+        {
+            "title": "No one asks",
+            "original": "Dikhai diye yun ke bekhud kiya, hamein aap se bhi juda kar chale.",
+            "english": "You appeared in such a way that I lost myself and even became estranged from my own self.",
+            "hindi": "तुम यूँ दिखाई दिए कि मैं खुद से भी बेख़बर और जुदा हो गया।",
+        },
+        {
+            "title": "Delhi's ruin",
+            "original": "Dilli jo ek shahr tha alam mein intikhab.",
+            "english": "Delhi, once a city chosen above all the world, lies devastated in memory.",
+            "hindi": "दिल्ली, जो कभी दुनिया में चुना हुआ शहर थी, अब उजड़ी हुई स्मृति बन गई है।",
+        },
+        {
+            "title": "Bewildered heart",
+            "original": "Ulti ho gayin sab tadbirein kuchh na dawa ne kam kiya.",
+            "english": "Every remedy turned upside down; no medicine truly worked.",
+            "hindi": "सारी तरकीबें उलटी पड़ गईं, कोई दवा काम न आई।",
+        },
+        {
+            "title": "Mad for love",
+            "original": "Mir ke din o mazhab ko ab puchte kya ho unne to.",
+            "english": "Why ask now of Mir's creed and faith, when love has carried him beyond such labels?",
+            "hindi": "अब मीर के दीन-ओ-मज़हब का क्या पूछना, इश्क़ उन्हें इन सीमाओं से परे ले गया है।",
+        },
+        {
+            "title": "A subtle manner",
+            "original": "Nazuki us ke lab ki kya kahiye, pankhri ek gulab ki si hai.",
+            "english": "How can one describe the delicacy of those lips? They are like a rose petal.",
+            "hindi": "उन होंठों की नज़ाकत क्या कहूँ, जैसे गुलाब की एक पंखुड़ी हो।",
+        },
+        {
+            "title": "The city of heart",
+            "original": "Ibtida-e ishq hai rota hai kya, age age dekhiye hota hai kya.",
+            "english": "This is only the beginning of love; why weep already? Wait and see what comes ahead.",
+            "hindi": "यह तो इश्क़ की शुरुआत है, अभी से क्यों रोते हो; आगे-आगे देखो क्या होता है।",
+        },
+        {
+            "title": "A lonely traveler",
+            "original": "Rah-e dur-e ishq mein rota hai kya.",
+            "english": "Why lament on the long road of love, when sorrow itself is part of the journey?",
+            "hindi": "इश्क़ की लंबी राह में क्यों रोते हो, जब दुख भी उसी सफ़र का हिस्सा है।",
+        },
+        {
+            "title": "My condition",
+            "original": "Ham hue tum hue ke Mir hue, us ki zulfon ke sab asir hue.",
+            "english": "I, you, and even Mir became captives of those tresses.",
+            "hindi": "मैं, तुम और मीर, सब उसकी ज़ुल्फ़ों के कैदी हो गए।",
+        },
+        {
+            "title": "The heart remains struck",
+            "original": "Mir in neem baz ankhon mein sari masti sharab ki si hai.",
+            "english": "In those half-open eyes lives the intoxication of wine.",
+            "hindi": "उन अधखुली आँखों में शराब जैसी मस्ती बसी है।",
+        },
+    ],
+    "ghalib": [
+        {
+            "title": "Thousands of desires",
+            "original": "Hazaron khwahishen aisi ke har khwahish pe dam nikle.",
+            "english": "Thousands of desires, each so intense it could take my breath away.",
+            "hindi": "हज़ारों ख़्वाहिशें, और हर ख़्वाहिश ऐसी कि उस पर जान निकल जाए।",
+        },
+        {
+            "title": "Heart, not brick",
+            "original": "Dil hi to hai na sang o khisht, dard se bhar na aaye kyun.",
+            "english": "It is only a heart, not stone or brick, so why should it not fill with pain?",
+            "hindi": "यह दिल ही तो है, पत्थर या ईंट नहीं; दर्द से भर क्यों न आए।",
+        },
+        {
+            "title": "It was no use",
+            "original": "Ye na thi hamari qismat ke visal-e yar hota.",
+            "english": "It was never my fate to find union with the beloved.",
+            "hindi": "यह मेरी क़िस्मत में नहीं था कि यार से मिलन हो पाता।",
+        },
+        {
+            "title": "Heart asks what",
+            "original": "Dil-e nadan tujhe hua kya hai, akhir is dard ki dawa kya hai.",
+            "english": "O innocent heart, what has happened to you, and what cure can there be for such pain?",
+            "hindi": "ऐ नादान दिल, तुझे क्या हो गया है, और इस दर्द की दवा आख़िर क्या है?",
+        },
+        {
+            "title": "The prison of being",
+            "original": "Qaid-e hayat o band-e gham asl mein dono ek hain.",
+            "english": "The prison of life and the bondage of sorrow are, in truth, one and the same.",
+            "hindi": "ज़िंदगी की क़ैद और ग़म की बेड़ी, असल में दोनों एक ही हैं।",
+        },
+        {
+            "title": "A world of illusions",
+            "original": "Bazicha-e atfal hai duniya mire age.",
+            "english": "Before me, the world appears like a playground of children.",
+            "hindi": "मेरी नज़र में यह दुनिया बच्चों के खेल का मैदान लगती है।",
+        },
+        {
+            "title": "Who is speaking",
+            "original": "Na tha kuchh to khuda tha, kuchh na hota to khuda hota.",
+            "english": "When there was nothing, there was God; had nothing existed, God would still remain.",
+            "hindi": "जब कुछ न था तब ख़ुदा था; कुछ भी न होता, तब भी ख़ुदा होता।",
+        },
+        {
+            "title": "The lane of the beloved",
+            "original": "Ishq par zor nahin hai ye woh atish Ghalib.",
+            "english": "Love cannot be forced; it is a fire that lights where it wills.",
+            "hindi": "इश्क़ पर ज़ोर नहीं चलता; यह ऐसी आग है जो अपनी मरज़ी से लगती है।",
+        },
+        {
+            "title": "The image in the heart",
+            "original": "Bas ke dushwar hai har kam ka asan hona.",
+            "english": "It is difficult enough for any task to become easy.",
+            "hindi": "हर काम का आसान हो जाना अपने आप में बहुत कठिन है।",
+        },
+        {
+            "title": "No remedy but patience",
+            "original": "Ranj se khugar hua insan to mit jata hai ranj.",
+            "english": "When a person becomes accustomed to sorrow, sorrow itself begins to disappear.",
+            "hindi": "जब इंसान ग़म का आदी हो जाता है, तो ग़म भी फीका पड़ने लगता है।",
+        },
+    ],
+    "bahadur-shah-zafar": [
+        {
+            "title": "A desolate heart",
+            "original": "Lagta nahin hai dil mera ujre dayar mein.",
+            "english": "My heart no longer settles in this ravaged land.",
+            "hindi": "उजड़े हुए इस देश में अब मेरा दिल लगता ही नहीं।",
+        },
+        {
+            "title": "No one belongs",
+            "original": "Na kisi ki ankh ka nur hun, na kisi ke dil ka qarar hun.",
+            "english": "I am neither the light of anyone's eye nor the peace of anyone's heart.",
+            "hindi": "मैं न किसी की आँख का नूर हूँ, न किसी के दिल का क़रार।",
+        },
+        {
+            "title": "The misfortune of burial",
+            "original": "Kitna hai bad-nasib Zafar dafn ke liye.",
+            "english": "How unfortunate is Zafar, that even for burial he received so little land.",
+            "hindi": "ज़फ़र कितने बदनसीब हैं कि दफ़्न होने के लिए भी दो गज़ ज़मीन न मिली।",
+        },
+        {
+            "title": "The captive king",
+            "original": "Umr-e daraz mang kar laye the char din.",
+            "english": "I had asked for a long life and was granted merely four days.",
+            "hindi": "लंबी उम्र माँगी थी, पर बदले में बस चार दिन मिले।",
+        },
+        {
+            "title": "Passed in longing",
+            "original": "Do arzoo mein kat gaye, do intizar mein.",
+            "english": "Two passed in desire, and two passed in waiting.",
+            "hindi": "दो दिन आरज़ू में कट गए, और दो इंतज़ार में।",
+        },
+        {
+            "title": "The ruined dwelling",
+            "original": "Baat karni mujhe mushkil kabhi aisi to na thi.",
+            "english": "It was never so difficult for me to speak as it has become now.",
+            "hindi": "मुझसे बात करना कभी इतना मुश्किल न था, जितना अब हो गया है।",
+        },
+        {
+            "title": "Exile",
+            "original": "Main woh majnun hun ke zindan mein nigahbanon ko.",
+            "english": "I am such a mad lover that even in prison the guards feel my unrest.",
+            "hindi": "मैं ऐसा दीवाना हूँ कि क़ैद में भी पहरेदार मेरी बेचैनी से परिचित हैं।",
+        },
+        {
+            "title": "A fading sovereignty",
+            "original": "Ya mujhe afsar-e shahana banaya hota.",
+            "english": "Either destiny should have truly made me royal, or spared me this bitter irony.",
+            "hindi": "या तो तक़दीर मुझे सचमुच शाही गरिमा देती, या यह कड़वी विडंबना न देती।",
+        },
+        {
+            "title": "The broken gathering",
+            "original": "Pas-e marg mere mazar par jo diya kisi ne jala diya.",
+            "english": "After my death, someone lit a lamp upon my grave.",
+            "hindi": "मेरी मृत्यु के बाद किसी ने मेरी क़ब्र पर एक दिया जला दिया।",
+        },
+        {
+            "title": "The end of empire",
+            "original": "Jo chaman khizan se ujarr gaya, main usi ki fasl-e bahar hun.",
+            "english": "I am the springtime memory of a garden destroyed by autumn.",
+            "hindi": "मैं उसी बाग़ की बहार की स्मृति हूँ जिसे पतझड़ ने उजाड़ दिया।",
+        },
+    ],
+    "muhammad-iqbal": [
+        {
+            "title": "Better than the world",
+            "original": "Sare jahan se achchha Hindostan hamara.",
+            "english": "Better than the whole world is our Hindustan.",
+            "hindi": "सारे जहाँ से अच्छा हमारा हिंदोस्ताँ है।",
+        },
+        {
+            "title": "The nightingale and the garden",
+            "original": "Ham bulbulen hain is ki, ye gulsitan hamara.",
+            "english": "We are its nightingales, and this garden is ours.",
+            "hindi": "हम इसकी बुलबुलें हैं, और यह गुलिस्ताँ हमारा है।",
+        },
+        {
+            "title": "Raise the self",
+            "original": "Khudi ko kar buland itna ke har taqdir se pehle.",
+            "english": "Raise the self so high that before destiny is written, God asks what you desire.",
+            "hindi": "अपने ख़ुदी को इतना ऊँचा करो कि हर तक़दीर से पहले ख़ुदा पूछे, तेरी रज़ा क्या है।",
+        },
+        {
+            "title": "Before every decree",
+            "original": "Khuda bande se khud puche bata teri raza kya hai.",
+            "english": "So elevated should the human spirit become that God asks it for its will.",
+            "hindi": "मनुष्य की आत्मा इतनी ऊँची हो कि ख़ुदा स्वयं उससे उसकी इच्छा पूछे।",
+        },
+        {
+            "title": "Stars beyond stars",
+            "original": "Sitaron se age jahan aur bhi hain.",
+            "english": "Beyond the stars are still more worlds to discover.",
+            "hindi": "सितारों के आगे भी और बहुत-सी दुनियाएँ हैं।",
+        },
+        {
+            "title": "Trials of love",
+            "original": "Abhi ishq ke imtihan aur bhi hain.",
+            "english": "The tests of love are not over; many more remain.",
+            "hindi": "इश्क़ की परीक्षाएँ अभी समाप्त नहीं हुईं, अभी और भी बाकी हैं।",
+        },
+        {
+            "title": "The eagle",
+            "original": "Tu shahin hai, parwaz hai kam tera.",
+            "english": "You are an eagle; your true work is flight.",
+            "hindi": "तुम शाहीन हो; तुम्हारा असली काम ऊँची उड़ान है।",
+        },
+        {
+            "title": "Do not live low",
+            "original": "Tere samne asman aur bhi hain.",
+            "english": "Before you there are yet more skies to rise into.",
+            "hindi": "तुम्हारे सामने अभी और भी आकाश फैले हुए हैं।",
+        },
+        {
+            "title": "Prayer of the child",
+            "original": "Lab pe ati hai dua ban ke tamanna meri.",
+            "english": "A prayer rises to my lips as the deepest desire of my heart.",
+            "hindi": "मेरे होंठों पर दुआ बनकर मेरे मन की तमन्ना आती है।",
+        },
+        {
+            "title": "Illuminate life",
+            "original": "Zindagi shamma ki surat ho khudaya meri.",
+            "english": "O God, let my life be like a lamp, giving light to others.",
+            "hindi": "हे ईश्वर, मेरी ज़िंदगी शमा की तरह हो जो औरों को रोशनी दे।",
+        },
+    ],
+}
+
+
 def ensure_dirs() -> None:
     POETS_DIR.mkdir(parents=True, exist_ok=True)
     ASSETS_DIR.mkdir(parents=True, exist_ok=True)
@@ -157,6 +605,67 @@ def page_template(title: str, subtitle: str, body: str, rel: str = "") -> str:
 
 def write_text(path: Path, content: str) -> None:
     path.write_text(textwrap.dedent(content).strip() + "\n", encoding="utf-8")
+
+
+def get_last_year(dates: str) -> int | None:
+    digits = []
+    current = ""
+    for char in dates:
+        if char.isdigit():
+            current += char
+        elif current:
+            digits.append(current)
+            current = ""
+    if current:
+        digits.append(current)
+    years = [int(value) for value in digits if len(value) == 4]
+    return years[-1] if years else None
+
+
+def rollout_note(poet: dict[str, str]) -> tuple[str, str]:
+    if poet["slug"] in PUBLIC_DOMAIN_SAMPLES:
+        return (
+            "Public-domain sample folio",
+            "This folio now includes ten curated public-domain excerpts with fresh Hindi and English translations for literary browsing.",
+        )
+    last_year = get_last_year(poet["dates"])
+    if last_year is not None and last_year <= 1924:
+        return (
+            "Public-domain curation queued",
+            "This poet is in the public-domain cohort, but the authenticated ten-sample text set is queued for a later curation wave so sources can be checked carefully.",
+        )
+    return (
+        "Rights-safe placeholder",
+        "This poet belongs to the later-era or contemporary cohort, so the folio is being held at interpretation level until a rights-safe excerpt strategy is finalized.",
+    )
+
+
+def render_samples(poet: dict[str, str]) -> str:
+    samples = PUBLIC_DOMAIN_SAMPLES.get(poet["slug"])
+    if not samples:
+        return ""
+    cards = []
+    for idx, sample in enumerate(samples, start=1):
+        cards.append(
+            f"""
+            <article class="sample-card">
+              <p class="tag">Sample {idx}</p>
+              <h3>{html.escape(sample["title"])}</h3>
+              <p class="sample-original">{html.escape(sample["original"])}</p>
+              <p><strong>English:</strong> {html.escape(sample["english"])}</p>
+              <p><strong>Hindi:</strong> {html.escape(sample["hindi"])}</p>
+            </article>
+            """
+        )
+    return f"""
+    <section class="section-block">
+      <h2>Ten public-domain samples</h2>
+      <p>These excerpts are presented in transliterated form for readability across audiences, with parallel English and Hindi renderings.</p>
+      <div class="sample-grid">
+        {"".join(cards)}
+      </div>
+    </section>
+    """
 
 
 def poet_card(poet: dict[str, str], rel: str = "../") -> str:
@@ -344,6 +853,8 @@ def build_poet_index() -> None:
 
 def build_poet_pages() -> None:
     for poet in POETS:
+        status_title, status_text = rollout_note(poet)
+        samples_section = render_samples(poet)
         body = f"""
         <section class="section-block poet-page">
           <p class="tag">{html.escape(poet["tradition"])} · {html.escape(poet["era"])}</p>
@@ -370,8 +881,14 @@ def build_poet_pages() -> None:
             <p>{html.escape(poet["name"])} helps readers understand how {html.escape(poet["tradition"])} poetry balances image, emotion, philosophy, and historical feeling. This folio page situates the poet within the broader movement from classical craft to modern and global continuities.</p>
           </div>
 
+          <div class="callout rollout-note">
+            <h3>{html.escape(status_title)}</h3>
+            <p>{html.escape(status_text)}</p>
+          </div>
+
           <p><a class="button-link" href="index.html">Back to poet index</a></p>
         </section>
+        {samples_section}
         """
         write_text(POETS_DIR / f"{poet['slug']}.html", page_template(poet["name"], f"{poet['tradition']} poetry · {poet['era']}", body, "../"))
 
@@ -575,6 +1092,37 @@ def build_assets() -> None:
 
     .poet-page .feature-grid {
       margin: 24px 0;
+    }
+
+    .sample-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .sample-card {
+      padding: 20px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .sample-card h3 {
+      font-size: 1.45rem;
+    }
+
+    .sample-card p {
+      margin: 0 0 10px;
+    }
+
+    .sample-original {
+      color: var(--paper);
+      font-style: italic;
+    }
+
+    .rollout-note {
+      margin-top: 18px;
     }
 
     .site-footer {
