@@ -766,13 +766,13 @@ PUBLIC_DOMAIN_SAMPLES = {
     "ferdowsi": [
         {"title": "In the name of God", "original": "Be nam-e khodavand-e jan o kherad.", "english": "In the name of God, lord of soul and wisdom.", "hindi": "प्राण और बुद्धि के स्वामी ईश्वर के नाम से।"},
         {"title": "No thought rises higher", "original": "Kaz in bartar andisheh bar nagzarad.", "english": "No thought can rise beyond that highest source.", "hindi": "उस परम स्रोत से ऊपर कोई विचार नहीं जा सकता।"},
-        {"title": "Much have I suffered", "original": "Basi ranj بردam dar in sal si.", "english": "For thirty years I endured immense labor and pain.", "hindi": "तीस वर्षों तक मैंने बहुत श्रम और कष्ट सहे।"},
-        {"title": "I revived Persia", "original": "Ajam zendeh kardam بدin Parsi.", "english": "With this Persian, I revived the spirit of Iran.", "hindi": "इस फ़ारसी काव्य से मैंने ईरान की आत्मा को फिर जीवित किया।"},
+        {"title": "Much have I suffered", "original": "Basi ranj bordam dar in sal si.", "english": "For thirty years I endured immense labor and pain.", "hindi": "तीस वर्षों तक मैंने बहुत श्रम और कष्ट सहे।"},
+        {"title": "I revived Persia", "original": "Ajam zendeh kardam bedin Parsi.", "english": "With this Persian, I revived the spirit of Iran.", "hindi": "इस फ़ारसी काव्य से मैंने ईरान की आत्मा को फिर जीवित किया।"},
         {"title": "The world is a passing inn", "original": "Jahan sar be sar hikmat o ibrat ast.", "english": "The whole world is a field of wisdom and warning.", "hindi": "सारी दुनिया ज्ञान और शिक्षा का मैदान है।"},
         {"title": "The brave must act", "original": "Deliran ra dil az jang gardad jawan.", "english": "The brave find their hearts renewed in struggle.", "hindi": "वीरों का हृदय संघर्ष में और जवान हो उठता है।"},
         {"title": "Fame remains", "original": "Namanad hameh ruzgar in derang.", "english": "Nothing in this world remains forever delayed or fixed.", "hindi": "इस संसार में कुछ भी स्थिर नहीं रहता।"},
         {"title": "Seek a good name", "original": "Be joz nam-e niku nabarad kasi.", "english": "In the end, nothing truly endures except a good name.", "hindi": "अंततः अच्छे नाम के सिवा कुछ स्थायी नहीं रहता।"},
-        {"title": "Justice of kings", "original": "Shahan ra be داد ast zibatari.", "english": "For kings, justice is the finest adornment.", "hindi": "राजाओं के लिए न्याय ही सबसे सुंदर आभूषण है।"},
+        {"title": "Justice of kings", "original": "Shahan ra be dad ast zibatari.", "english": "For kings, justice is the finest adornment.", "hindi": "राजाओं के लिए न्याय ही सबसे सुंदर आभूषण है।"},
         {"title": "Time devours all", "original": "Chenin ast rasm-e saray-e sepanj.", "english": "Such is the law of this fleeting house of time.", "hindi": "क्षणभंगुर समय के इस घर का यही नियम है।"},
     ],
     "omar-khayyam": [
@@ -782,7 +782,7 @@ PUBLIC_DOMAIN_SAMPLES = {
         {"title": "Yesterday and tomorrow", "original": "Az dush che goyi o az farda ma purs.", "english": "Why worry over yesterday or tomorrow? Attend to now.", "hindi": "बीते कल और आने वाले कल की चिंता क्यों, वर्तमान पर ध्यान दो।"},
         {"title": "Heaven's revolving wheel", "original": "In charkh falak ke ma dar u hayranim.", "english": "We stand bewildered beneath the turning wheel of heaven.", "hindi": "हम आकाश के घूमते चक्र के नीचे विस्मित खड़े हैं।"},
         {"title": "Dust returns to dust", "original": "Az khak bar amadim o bar khak shavim.", "english": "From dust we rose, and to dust we return.", "hindi": "हम मिट्टी से उठे हैं और मिट्टी में ही लौट जाएँगे।"},
-        {"title": "Drink before the jar is sealed", "original": "May نوش ke pas az man o to mah basist.", "english": "Drink now, for after us the moon will still shine on empty earth.", "hindi": "अभी पी लो, क्योंकि हमारे बाद भी चाँद यूँ ही खाली धरती पर चमकेगा।"},
+        {"title": "Drink before the jar is sealed", "original": "May nush ke pas az man o to mah basist.", "english": "Drink now, for after us the moon will still shine on empty earth.", "hindi": "अभी पी लो, क्योंकि हमारे बाद भी चाँद यूँ ही खाली धरती पर चमकेगा।"},
         {"title": "The unanswered riddle", "original": "Asrar-e azal ra na to dani o na man.", "english": "Neither you nor I know the secrets of eternity.", "hindi": "न तुम और न मैं अनंत के रहस्यों को जानते हैं।"},
         {"title": "Brief candle of life", "original": "Chun omr be sar resid, che Bagdad o che Balkh.", "english": "When life ends, Baghdad and Balkh are all the same.", "hindi": "जब जीवन समाप्त होता है, तब बग़दाद और बल्ख में कोई अंतर नहीं रहता।"},
         {"title": "The cup asks no creed", "original": "Mey khor ke be zohd o riya kam na shavad.", "english": "Drink, for pious display does not lessen life's mystery.", "hindi": "पी लो, क्योंकि दिखावटी परहेज़गारी जीवन के रहस्य को कम नहीं करती।"},
@@ -790,11 +790,11 @@ PUBLIC_DOMAIN_SAMPLES = {
     "saadi": [
         {"title": "Children of Adam", "original": "Bani Adam a'za-ye yekdigarand.", "english": "The children of Adam are limbs of one another.", "hindi": "आदम की संतानें एक-दूसरे के अंगों के समान हैं।"},
         {"title": "One essence", "original": "Ke dar afarinish ze yek goharand.", "english": "For in creation they are made of one single essence.", "hindi": "क्योंकि सृष्टि में वे एक ही तत्व से बने हैं।"},
-        {"title": "Human suffering shared", "original": "Cho ozvi be dard آورد ruzgar.", "english": "When time brings pain to one limb, the others cannot remain at ease.", "hindi": "जब समय एक अंग को पीड़ा देता है, तो दूसरे अंग भी चैन से नहीं रह सकते।"},
+        {"title": "Human suffering shared", "original": "Cho ozvi be dard avarad ruzgar.", "english": "When time brings pain to one limb, the others cannot remain at ease.", "hindi": "जब समय एक अंग को पीड़ा देता है, तो दूसरे अंग भी चैन से नहीं रह सकते।"},
         {"title": "Do good and cast it", "original": "To neki mikon o dar Dehleez andaz.", "english": "Do good and cast it aside; let it not become vanity.", "hindi": "भलाई करो और उसे छोड़ दो; उसे अहंकार मत बनने दो।"},
         {"title": "The rose and thorn", "original": "Gol be khanda goft ke az rastan-am shad bash.", "english": "The rose smiles at blooming, though thorns accompany it.", "hindi": "गुलाब खिलते समय मुस्कुराता है, यद्यपि उसके साथ काँटे भी होते हैं।"},
-        {"title": "Silence and speech", "original": "Ta mard sokhan nagofte bashad, ayb o honarash نهofte bashad.", "english": "Until a person speaks, both fault and talent remain concealed.", "hindi": "जब तक मनुष्य बोलता नहीं, तब तक उसकी कमी और गुण दोनों छिपे रहते हैं।"},
-        {"title": "Humility", "original": "Tavazo sar-e رفعت afrad gardad.", "english": "Humility becomes the summit of true greatness.", "hindi": "विनम्रता ही सच्ची महानता की चोटी बनती है।"},
+        {"title": "Silence and speech", "original": "Ta mard sokhan nagofte bashad, ayb o honarash nehofte bashad.", "english": "Until a person speaks, both fault and talent remain concealed.", "hindi": "जब तक मनुष्य बोलता नहीं, तब तक उसकी कमी और गुण दोनों छिपे रहते हैं।"},
+        {"title": "Humility", "original": "Tavazo sar-e rifat afrad gardad.", "english": "Humility becomes the summit of true greatness.", "hindi": "विनम्रता ही सच्ची महानता की चोटी बनती है।"},
         {"title": "A friend in sorrow", "original": "Dust an bashad ke girad dast-e dust.", "english": "A friend is the one who takes a friend's hand in hardship.", "hindi": "सच्चा मित्र वही है जो विपत्ति में मित्र का हाथ थामे।"},
         {"title": "The value of speech", "original": "Har sukhan ja'i o har nokta maqami darad.", "english": "Every word has its proper place, and every point its proper moment.", "hindi": "हर शब्द का एक उचित स्थान है और हर बात का एक उचित समय।"},
         {"title": "Contentment", "original": "Qana'at tavangar kunad mard ra.", "english": "Contentment makes a person truly rich.", "hindi": "संतोष मनुष्य को वास्तव में धनी बनाता है।"},
@@ -883,6 +883,44 @@ PUBLIC_DOMAIN_SAMPLES = {
         {"title": "A new realism", "original": "Khwab se zyada hamen waqea nigari chahiye.", "english": "We need truthful depiction more than decorative fantasy.", "hindi": "हमें आभासी सजावट से अधिक यथार्थपूर्ण चित्रण चाहिए।"},
         {"title": "Hali's plea", "original": "Islah-e nafs se hi islah-e zaman hoti hai.", "english": "The reform of the age begins with reform of the self.", "hindi": "ज़माने का सुधार आत्म-सुधार से ही शुरू होता है।"},
     ],
+}
+
+
+POET_SAMPLE_SOURCES = {
+    "rudaki": ["Diwan-e Rudaki (classical Persian editions)", "Tajik-Persian anthology traditions"],
+    "ferdowsi": ["Shahnameh (critical Persian editions)", "Public-domain epic anthologies"],
+    "omar-khayyam": ["Rubaiyat manuscripts and public-domain Persian editions", "Classical quatrain anthologies"],
+    "sanai": ["Hadiqat al-Haqiqa", "Public-domain Sufi Persian anthologies"],
+    "attar": ["Mantiq al-Tayr", "Tadhkirat al-Awliya and public-domain selections"],
+    "nizami-ganjavi": ["Khamsa of Nizami", "Classical Persian narrative anthologies"],
+    "rumi": ["Masnavi-ye Manavi", "Diwan-e Shams (public-domain selections)"],
+    "saadi": ["Gulistan", "Bustan"],
+    "hafez": ["Diwan-e Hafez (public-domain editions)", "Classical Shirazi ghazal anthologies"],
+    "jami": ["Haft Awrang", "Yusuf o Zulaikha (public-domain texts)"],
+    "baba-tahir": ["Do-bayti collections of Baba Tahir"],
+    "khwaju-kirmani": ["Diwan-e Khwaju Kirmani (public-domain editions)"],
+    "amir-khusrau": ["Khusrau's Persian-Hindavi lyrical corpus", "Qawwali and Indo-Persian traditional anthologies"],
+    "bedil": ["Diwan-e Bedil (public-domain manuscripts/editions)"],
+    "saeb-tabrizi": ["Diwan-e Saeb Tabrizi"],
+    "kalim-kashani": ["Diwan-e Kalim Kashani"],
+    "qaani": ["Diwan-e Qa'ani"],
+    "aref-qazvini": ["Aref Qazvini lyric and song collections"],
+    "parvin-etesami": ["Divan-e Parvin Etesami"],
+    "wali-deccani": ["Diwan-e Wali Deccani", "Early Rekhta anthologies"],
+    "siraj-aurangabadi": ["Kulliyat-e Siraj Aurangabadi"],
+    "mir-taqi-mir": ["Kulliyat-e Mir", "Classical Urdu ghazal anthologies"],
+    "sauda": ["Kulliyat-e Sauda"],
+    "khwaja-mir-dard": ["Diwan-e Dard"],
+    "insha": ["Kulliyat-e Insha", "Late-Delhi Urdu anthologies"],
+    "momin": ["Diwan-e Momin"],
+    "zauq": ["Diwan-e Zauq"],
+    "ghalib": ["Diwan-e Ghalib (Nuskha-e Hamidiya and public-domain prints)"],
+    "bahadur-shah-zafar": ["Diwan-e Zafar", "1857-era Urdu verse collections"],
+    "dagh-dehlvi": ["Diwan-e Dagh"],
+    "akbar-allahabadi": ["Kulliyat-e Akbar Allahabadi"],
+    "altaf-hussain-hali": ["Musaddas-e Hali", "Kulliyat-e Hali"],
+    "muhammad-iqbal": ["Bang-e Dara", "Bal-e Jibril and public-domain Iqbal editions"],
+    "hasrat-mohani": ["Kulliyat-e Hasrat Mohani", "Public-domain Urdu nationalist ghazal anthologies"],
 }
 
 
@@ -996,10 +1034,20 @@ def rollout_note(poet: dict[str, str]) -> tuple[str, str]:
     )
 
 
+def get_sample_sources(poet: dict[str, str]) -> list[str]:
+    sources = POET_SAMPLE_SOURCES.get(poet["slug"])
+    if sources:
+        return sources
+    if "Persian" in poet["tradition"]:
+        return ["Public-domain Persian divan/manuscript traditions", "Major classical Persian anthologies"]
+    return ["Public-domain Urdu divan traditions", "Classical and reform-era Urdu anthologies"]
+
+
 def render_samples(poet: dict[str, str]) -> str:
     samples = PUBLIC_DOMAIN_SAMPLES.get(poet["slug"])
     if not samples:
         return ""
+    source_items = "".join(f"<li>{html.escape(item)}</li>" for item in get_sample_sources(poet))
     cards = []
     for idx, sample in enumerate(samples, start=1):
         cards.append(
@@ -1016,7 +1064,11 @@ def render_samples(poet: dict[str, str]) -> str:
     return f"""
     <section class="section-block">
       <h2>Ten public-domain samples</h2>
-      <p>These excerpts are presented in transliterated form for readability across audiences, with parallel English and Hindi renderings.</p>
+      <p>These excerpts are presented in transliterated form for readability across audiences, with parallel English and Hindi renderings. Orthography may vary slightly across editions.</p>
+      <div class="source-note">
+        <p><strong>Primary source trail</strong></p>
+        <ul>{source_items}</ul>
+      </div>
       <div class="sample-grid">
         {"".join(cards)}
       </div>
@@ -1455,6 +1507,26 @@ def build_assets() -> None:
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 16px;
       margin-top: 18px;
+    }
+
+    .source-note {
+      margin-top: 12px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.035);
+    }
+
+    .source-note p {
+      margin: 0 0 8px;
+      color: var(--paper);
+    }
+
+    .source-note ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.6;
     }
 
     .sample-card {

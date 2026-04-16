@@ -204,6 +204,26 @@ p {
   margin-top: 18px;
 }
 
+.source-note {
+  margin-top: 12px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.source-note p {
+  margin: 0 0 8px;
+  color: var(--paper);
+}
+
+.source-note ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .sample-card {
   padding: 20px;
   border-radius: 18px;
