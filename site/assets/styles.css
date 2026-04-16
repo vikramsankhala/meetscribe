@@ -239,6 +239,14 @@ p {
   margin: 0 0 10px;
 }
 
+.citation-meta {
+  font-size: 0.9rem;
+  color: #d8dfeb;
+  border-top: 1px dashed var(--line);
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
 .sample-original {
   color: var(--paper);
   font-style: italic;
@@ -246,6 +254,34 @@ p {
 
 .rollout-note {
   margin-top: 18px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.reference-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.reference-table th,
+.reference-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(224, 194, 122, 0.18);
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.reference-table thead th {
+  color: var(--paper);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .site-footer {

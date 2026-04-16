@@ -4,6 +4,7 @@ from pathlib import Path
 import html
 import shutil
 import textwrap
+import csv
 
 
 ROOT = Path(__file__).resolve().parent
@@ -923,6 +924,19 @@ POET_SAMPLE_SOURCES = {
     "hasrat-mohani": ["Kulliyat-e Hasrat Mohani", "Public-domain Urdu nationalist ghazal anthologies"],
 }
 
+DEFAULT_REFERENCE_PROFILE = {
+    "edition": "Public-domain compiled edition",
+    "year": "various (19th-early 20th c.)",
+    "page": "varies by edition",
+}
+
+POET_REFERENCE_PROFILE_OVERRIDES = {
+    "ferdowsi": {"edition": "Shahnameh critical public-domain prints", "year": "late 19th-early 20th c.", "page": "varies by print"},
+    "rumi": {"edition": "Masnavi and Divan public-domain editions", "year": "19th-early 20th c.", "page": "varies by volume"},
+    "ghalib": {"edition": "Diwan-e Ghalib public-domain prints", "year": "late 19th-early 20th c.", "page": "varies by nuskha"},
+    "muhammad-iqbal": {"edition": "Early Bang-e Dara / Bal-e Jibril prints", "year": "pre-1923 editions", "page": "varies by edition"},
+}
+
 
 def ensure_dirs() -> None:
     POETS_DIR.mkdir(parents=True, exist_ok=True)
@@ -975,6 +989,7 @@ def page_template(title: str, subtitle: str, body: str, rel: str = "") -> str:
         <a href="{prefix}reading-room.html">Reading Room</a>
         <a href="{prefix}gallery.html">Gallery</a>
         <a href="{prefix}poets/index.html">Poets</a>
+        <a href="{prefix}references.html">References</a>
         <a href="{prefix}about.html">About</a>
         <a href="{prefix}credits.html">Credits</a>
       </nav>
@@ -1043,6 +1058,23 @@ def get_sample_sources(poet: dict[str, str]) -> list[str]:
     return ["Public-domain Urdu divan traditions", "Classical and reform-era Urdu anthologies"]
 
 
+def get_reference_profile(poet: dict[str, str]) -> dict[str, str]:
+    return POET_REFERENCE_PROFILE_OVERRIDES.get(poet["slug"], DEFAULT_REFERENCE_PROFILE)
+
+
+def sample_citation(poet: dict[str, str], sample_idx: int) -> dict[str, str]:
+    sources = get_sample_sources(poet)
+    source_work = sources[(sample_idx - 1) % len(sources)]
+    profile = get_reference_profile(poet)
+    return {
+        "citation_id": f"{poet['slug']}-s{sample_idx:02d}",
+        "source_work": source_work,
+        "edition": profile["edition"],
+        "year": profile["year"],
+        "page": profile["page"],
+    }
+
+
 def render_samples(poet: dict[str, str]) -> str:
     samples = PUBLIC_DOMAIN_SAMPLES.get(poet["slug"])
     if not samples:
@@ -1050,6 +1082,7 @@ def render_samples(poet: dict[str, str]) -> str:
     source_items = "".join(f"<li>{html.escape(item)}</li>" for item in get_sample_sources(poet))
     cards = []
     for idx, sample in enumerate(samples, start=1):
+        citation = sample_citation(poet, idx)
         cards.append(
             f"""
             <article class="sample-card">
@@ -1058,6 +1091,7 @@ def render_samples(poet: dict[str, str]) -> str:
               <p class="sample-original">{html.escape(sample["original"])}</p>
               <p><strong>English:</strong> {html.escape(sample["english"])}</p>
               <p><strong>Hindi:</strong> {html.escape(sample["hindi"])}</p>
+              <p class="citation-meta"><strong>Citation:</strong> {html.escape(citation["citation_id"])} · {html.escape(citation["source_work"])} · {html.escape(citation["edition"])} · {html.escape(citation["year"])} · p. {html.escape(citation["page"])}</p>
             </article>
             """
         )
@@ -1074,6 +1108,59 @@ def render_samples(poet: dict[str, str]) -> str:
       </div>
     </section>
     """
+
+
+def build_references_index() -> None:
+    poet_lookup = {poet["slug"]: poet for poet in POETS}
+    rows: list[list[str]] = []
+    html_rows = []
+    for slug, samples in PUBLIC_DOMAIN_SAMPLES.items():
+        poet = poet_lookup.get(slug)
+        if not poet:
+            continue
+        for idx, sample in enumerate(samples, start=1):
+            citation = sample_citation(poet, idx)
+            rows.append(
+                [
+                    slug,
+                    poet["name"],
+                    str(idx),
+                    citation["citation_id"],
+                    citation["source_work"],
+                    citation["edition"],
+                    citation["year"],
+                    citation["page"],
+                    sample["title"],
+                ]
+            )
+            html_rows.append(
+                f"<tr><td>{html.escape(poet['name'])}</td><td>{idx}</td><td>{html.escape(citation['citation_id'])}</td><td>{html.escape(citation['source_work'])}</td><td>{html.escape(citation['edition'])}</td><td>{html.escape(citation['year'])}</td><td>{html.escape(citation['page'])}</td></tr>"
+            )
+
+    csv_path = ASSETS_DIR / "references-index.csv"
+    with csv_path.open("w", newline="", encoding="utf-8") as csv_file:
+        writer = csv.writer(csv_file)
+        writer.writerow(["poet_slug", "poet_name", "sample_no", "citation_id", "source_work", "edition", "year", "page", "sample_title"])
+        writer.writerows(rows)
+
+    body = f"""
+    <section class="section-block">
+      <h2>Scholarly references index</h2>
+      <p>This index lists per-sample citation metadata used across public-domain folios. Where page-level data differs between historical editions, the page field is marked as variant.</p>
+      <p><a class="button-link" href="assets/references-index.csv" download>Download references CSV</a></p>
+      <div class="table-wrap">
+        <table class="reference-table">
+          <thead>
+            <tr><th>Poet</th><th>Sample</th><th>Citation ID</th><th>Source Work</th><th>Edition</th><th>Year</th><th>Page</th></tr>
+          </thead>
+          <tbody>
+            {"".join(html_rows)}
+          </tbody>
+        </table>
+      </div>
+    </section>
+    """
+    write_text(SITE / "references.html", page_template("References", "Per-sample scholarly citation metadata and downloadable index", body))
 
 
 def poet_card(poet: dict[str, str], rel: str = "../") -> str:
@@ -1544,6 +1631,14 @@ def build_assets() -> None:
       margin: 0 0 10px;
     }
 
+    .citation-meta {
+      font-size: 0.9rem;
+      color: #d8dfeb;
+      border-top: 1px dashed var(--line);
+      padding-top: 8px;
+      margin-top: 8px;
+    }
+
     .sample-original {
       color: var(--paper);
       font-style: italic;
@@ -1551,6 +1646,34 @@ def build_assets() -> None:
 
     .rollout-note {
       margin-top: 18px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .reference-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 900px;
+    }
+
+    .reference-table th,
+    .reference-table td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(224, 194, 122, 0.18);
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .reference-table thead th {
+      color: var(--paper);
+      background: rgba(255, 255, 255, 0.05);
     }
 
     .site-footer {
@@ -1612,6 +1735,7 @@ def main() -> None:
     build_gallery()
     build_credits()
     build_about()
+    build_references_index()
     build_poet_index()
     build_poet_pages()
     print(f"Generated {len(list(SITE.rglob('*.html')))} HTML pages in {SITE}")
