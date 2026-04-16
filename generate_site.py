@@ -1163,6 +1163,76 @@ def build_references_index() -> None:
     write_text(SITE / "references.html", page_template("References", "Per-sample scholarly citation metadata and downloadable index", body))
 
 
+def person_profile_label(poet: dict[str, str]) -> str:
+    theme_text = poet["themes"].lower()
+    if any(word in theme_text for word in ("revolt", "resistance", "justice", "defiance")):
+        return "a public truth-teller who speaks with moral courage"
+    if any(word in theme_text for word in ("mystical", "mysticism", "union", "divine", "sufi", "annihilation")):
+        return "an inward seeker who turns longing into spiritual insight"
+    if any(word in theme_text for word in ("satire", "wit", "irony")):
+        return "a sharp observer of society who uses wit as a form of critique"
+    if any(word in theme_text for word in ("love", "beloved", "romance", "longing")):
+        return "an emotional cartographer of love, vulnerability, and desire"
+    if any(word in theme_text for word in ("ethics", "wisdom", "moral", "compassion")):
+        return "a humane mentor whose poetry feels like ethical conversation"
+    return "a reflective craftsperson who turns lived experience into memorable language"
+
+
+CONTEMPORARY_ROLE_OVERRIDES = {
+    "rudaki": "If they lived today: a courtly classicist turned national arts curator, shaping public taste with lucidity, grace, and musical poise.",
+    "ferdowsi": "If they lived today: an epic chronicler of civilizational memory, restoring historical confidence through long-form narrative craft.",
+    "omar-khayyam": "If they lived today: a mathematically minded skeptic-philosopher, pairing intellectual rigor with elegant existential quatrains.",
+    "attar": "If they lived today: a Sufi narrative mentor, guiding readers through ego, rupture, and transformation in allegorical journeys.",
+    "rumi": "If they lived today: a transnational mystic teacher, turning longing, music, and companionship into a language of shared healing.",
+    "saadi": "If they lived today: a civic moral essayist, offering portable wisdom for classrooms, courts, and everyday public conduct.",
+    "hafez": "If they lived today: a lyrical ironist of the private and political, speaking in coded elegance against piety and power.",
+    "amir-khusrau": "If they lived today: an Indo-Persian cultural polymath, fusing poetry, performance, and multilingual song for broad audiences.",
+    "bedil": "If they lived today: a high-modernist metaphysical experimenter, writing dense interior maps for philosophically restless readers.",
+    "mir-taqi-mir": "If they lived today: a witness of urban fracture, recording heartbreak, displacement, and memory with disarming softness.",
+    "ghalib": "If they lived today: a cosmopolitan prose-poet and correspondent, blending salon wit, metaphysical doubt, and intimate self-scrutiny.",
+    "muhammad-iqbal": "If they lived today: a revivalist philosopher-poet, calling for intellectual selfhood, ethical agency, and collective renewal.",
+    "faiz-ahmad-faiz": "If they lived today: a progressive humanist voice, braiding romance with resistance in the idiom of workers and dreamers.",
+    "forugh-farrokhzad": "If they lived today: a modern confessional innovator, confronting gender, desire, and solitude with fearless artistic clarity.",
+    "ahmad-shamlu": "If they lived today: a free-verse civic orator, turning lyric speech into a public grammar of dignity and dissent.",
+    "parveen-shakir": "If they lived today: an urban contemporary diarist of womanhood, balancing tenderness, irony, and social realism.",
+    "parvin-etesami": "If they lived today: a classroom-facing ethical poet, dramatizing justice, education, and conscience in lucid conversational verse.",
+    "hasrat-mohani": "If they lived today: a principled dissenter-devotee, joining anti-colonial resolve, democratic imagination, and mystical fidelity.",
+    "akbar-allahabadi": "If they lived today: a late-colonial style satirist reborn, skewering elite imitation, bureaucracy, and fashionable hypocrisies.",
+    "nida-fazli": "If they lived today: a minimalist city sage, translating ordinary speech, migration, and loneliness into quiet philosophical warmth.",
+}
+
+
+def contemporary_role_line(poet: dict[str, str]) -> str:
+    override = CONTEMPORARY_ROLE_OVERRIDES.get(poet["slug"])
+    if override:
+        return override
+    theme_text = poet["themes"].lower()
+    if any(word in theme_text for word in ("revolt", "resistance", "justice", "defiance")):
+        return "If they lived today: a poet-activist and public conscience, speaking truth in civic spaces and digital movements."
+    if any(word in theme_text for word in ("mystical", "mysticism", "union", "divine", "sufi", "annihilation")):
+        return "If they lived today: a contemplative guide and spiritual podcaster, translating inner life for an anxious age."
+    if any(word in theme_text for word in ("satire", "wit", "irony")):
+        return "If they lived today: a satirical columnist and cultural critic, exposing pretension with elegance and humor."
+    if any(word in theme_text for word in ("love", "beloved", "romance", "longing")):
+        return "If they lived today: a lyric storyteller of relationships, emotional vulnerability, and the politics of intimacy."
+    if any(word in theme_text for word in ("ethics", "wisdom", "moral", "compassion")):
+        return "If they lived today: a public teacher of empathy and ethics, bringing moral clarity into everyday discourse."
+    return "If they lived today: a thoughtful essayist-poet, helping readers make sense of complexity with grace and precision."
+
+
+def render_person_section(poet: dict[str, str]) -> str:
+    profile = person_profile_label(poet)
+    today_line = contemporary_role_line(poet)
+    return f"""
+    <div class="callout person-note">
+      <h3>The Person</h3>
+      <p>{html.escape(poet["name"])} appears here not only as a literary figure, but as {html.escape(profile)}. Behind the verse is a recognizable human temperament shaped by {html.escape(poet["era"])} pressures, {html.escape(poet["region"])} realities, and recurring concerns such as {html.escape(poet["themes"])}.</p>
+      <p>For contemporary generations, this is a poet to relate to as much as to admire: someone negotiating identity, love, loss, power, faith, doubt, and dignity in language that still feels emotionally current.</p>
+      <p><strong>{html.escape(today_line)}</strong></p>
+    </div>
+    """
+
+
 def poet_card(poet: dict[str, str], rel: str = "../") -> str:
     return f"""
     <article class="poet-card">
@@ -1350,6 +1420,7 @@ def build_poet_pages() -> None:
     for poet in POETS:
         status_title, status_text = rollout_note(poet)
         samples_section = render_samples(poet)
+        person_section = render_person_section(poet)
         body = f"""
         <section class="section-block poet-page">
           <p class="tag">{html.escape(poet["tradition"])} · {html.escape(poet["era"])}</p>
@@ -1375,6 +1446,8 @@ def build_poet_pages() -> None:
             <h3>Why this poet matters</h3>
             <p>{html.escape(poet["name"])} helps readers understand how {html.escape(poet["tradition"])} poetry balances image, emotion, philosophy, and historical feeling. This folio page situates the poet within the broader movement from classical craft to modern and global continuities.</p>
           </div>
+
+          {person_section}
 
           <div class="callout rollout-note">
             <h3>{html.escape(status_title)}</h3>
